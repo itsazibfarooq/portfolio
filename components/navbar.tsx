@@ -2,23 +2,42 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
+
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleShadow);
+  }, []);
 
   const handleNav = () => {
     setNav(!nav);
   };
 
   return (
-    <div className="fixed bg-[#ecf0f3] w-full h-20 shadow-xl z-[100]">
+    <div
+      className={
+        shadow
+          ? "fixed bg-[#ecf0f3] w-full h-20 shadow-xl z-[100]"
+          : "fixed w-full h-20 z-[100]"
+      }
+    >
       {/* home page header */}
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
-          src="/../public/assets/navLogo.png"
+          src="/../public/assets/sign.png"
           width="125"
           height="50"
           alt="/"
@@ -67,7 +86,7 @@ function Navbar() {
         >
           <div className="flex w-full items-center justify-between">
             <Image
-              src="/../public/assets/navLogo.png"
+              src="/../public/assets/sign.png"
               alt="/"
               width="87"
               height="35"
