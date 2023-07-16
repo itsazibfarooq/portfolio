@@ -1,16 +1,61 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import Link from "next/link";
+import axios from "axios";
 
 import contact from "../public/assets/contact.jpg";
 import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import Link from "next/link";
+
+const serverBase: string = "https://wild-sound-3168.fly.dev";
+
+const axiosInstance = axios.create({
+  baseURL: `${serverBase}`,
+  headers: { "Content-Type": "application/json" },
+});
 
 function Contact() {
+  const defaultContact = {
+    name: "",
+    phoneNumber: "",
+    email: "",
+    subject: "",
+    message: "",
+  };
+  const [formData, setFormData] = useState(defaultContact);
+
+  function handleChange(event: any) {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  }
+
+  const [status, setStatus] = useState("send message");
+
+  const handleSubmit = async (event: any) => {
+    event.preventDefault();
+    const payload: any = JSON.stringify(formData);
+    try {
+      await axiosInstance.post(`/portfolio/contact`, payload);
+      setFormData(defaultContact);
+      setStatus("success");
+      setTimeout(() => {
+        setStatus("send message");
+      }, 3000);
+    } catch (err) {
+      setStatus("Try Again");
+      console.log(err);
+    }
+  };
+
   return (
-    <div className="w-full lg:h-screen">
-      <div className="max-w-[80%] m-auto px-2 py-16 w-full">
+    <div id="contact" className="w-full lg:h-screen">
+      <div className="max-w-[80%] m-auto px-2 py-8 w-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Contact
         </p>
@@ -29,15 +74,12 @@ function Contact() {
                 />
               </div>
               <div>
-                <h2 className="py-2">Name Here</h2>
-                <p>Front-End Developer</p>
-                <p>
-                  I am available for Freelance or Full-Time Full Stack Position.
-                  Connect with me or let's talk
-                </p>
+                <h2 className="py-2">Azib Farooq</h2>
+                <p>Full Stack Developer</p>
+                <p>Available for Freelance or Full-Time Position.</p>
               </div>
               <div>
-                <p className="uppercase pt-8">Connect With ME</p>
+                <p className="uppercase pt-8">Let's Talk</p>
                 <div className="flex items-center justify-between py-4">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <FaLinkedinIn />
@@ -63,48 +105,82 @@ function Contact() {
 
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">Name</label>
-                    <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
-                      type="text"
-                    />
-                  </div>
-                  <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">
-                      Phone Number
+                    <label htmlFor="name" className="uppercase text-sm py-2">
+                      Name
                     </label>
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
+                      name="name"
+                      onChange={handleChange}
+                      value={formData.name}
+                    />
+                  </div>
+                  <div className="flex flex-col">
+                    <label
+                      htmlFor="phoneNumber"
+                      className="uppercase text-sm py-2"
+                    >
+                      Phone Number
+                    </label>
+                    <input
+                      name="phoneNumber"
+                      className="border-2 rounded-lg p-3 flex border-gray-300"
+                      type="text"
+                      onChange={handleChange}
+                      value={formData.phoneNumber}
                     />
                   </div>
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Email</label>
+                  <label htmlFor="email" className="uppercase text-sm py-2">
+                    Email
+                  </label>
                   <input
+                    name="email"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="email"
+                    onChange={handleChange}
+                    value={formData.email}
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Subject</label>
+                  <label htmlFor="subject" className="uppercase text-sm py-2">
+                    Subject
+                  </label>
                   <input
+                    name="subject"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="text"
+                    onChange={handleChange}
+                    value={formData.subject}
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Message</label>
+                  <label htmlFor="message" className="uppercase text-sm py-2">
+                    Message
+                  </label>
                   <textarea
+                    name="message"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     rows="10"
+                    onChange={handleChange}
+                    value={formData.message}
                   ></textarea>
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4">
-                  Send Message
+                <button
+                  className={`w-full p-4 text-gray-100 mt-4 ${
+                    status === "send message"
+                      ? "bg-gradient-to-r from-[#5651e5] to-[#709dff]"
+                      : status === "success"
+                      ? "bg-gradient-to-r from-green-300 to-green-500"
+                      : "bg-gradient-to-r from-red-300 to-red-500"
+                  }`}
+                >
+                  {status}
                 </button>
               </form>
             </div>

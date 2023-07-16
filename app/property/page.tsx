@@ -1,20 +1,13 @@
-import Navbar from "../components/navbar";
-import Main from "../components/main";
-import About from "@/components/about";
-import Skills from "@/components/skills";
-import Projects from "@/components/projects";
-import Contact from "@/components/contact";
+import React from "react";
+import Property from "./property";
+import Navbar from "@/components/navbar";
 import Script from "next/script";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Navbar />
-      <Main />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Property />
       {/* <!-- Google tag (gtag.js) --> */}
       <Script
         strategy="afterInteractive"
@@ -28,6 +21,6 @@ export default function Home() {
           gtag('config', 'G-0VHND6XRJV');
         `}
       </Script>
-    </div>
+    </>
   );
 }
