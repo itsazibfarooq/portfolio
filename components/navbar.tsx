@@ -57,7 +57,7 @@ function Navbar() {
       {/* home page header */}
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
-          src="/../public/assets/sign.jpg"
+          src="/../public/assets/sign.png"
           width="125"
           height="50"
           alt="/"
@@ -104,7 +104,7 @@ function Navbar() {
         >
           <div className="flex w-full items-center justify-between">
             <Image
-              src="/../public/assets/sign.jpg"
+              src="/../public/assets/sign.png"
               alt="/"
               width="87"
               height="35"
