@@ -30,7 +30,7 @@ function Skills() {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/python.png"
+                  src="/../public/assets/skills/python_.png"
                   width="64"
                   height="64"
                   alt="/"
@@ -45,7 +45,7 @@ function Skills() {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/cpp.png"
+                  src="/../public/assets/skills/CPP_.png"
                   width="64"
                   height="64"
                   alt="/"

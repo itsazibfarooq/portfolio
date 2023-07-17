@@ -79,7 +79,7 @@ function Contact() {
                 <p>Available for Freelance or Full-Time Position.</p>
               </div>
               <div>
-                <p className="uppercase pt-8">Let's Talk</p>
+                <p className="uppercase pt-8">Let&apos;s Talk</p>
                 <div className="flex items-center justify-between py-4">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <FaLinkedinIn />
@@ -166,7 +166,7 @@ function Contact() {
                   <textarea
                     name="message"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
-                    rows="10"
+                    rows={10}
                     onChange={handleChange}
                     value={formData.message}
                   ></textarea>

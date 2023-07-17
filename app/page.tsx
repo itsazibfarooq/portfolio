@@ -20,7 +20,7 @@ export default function Home() {
         strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=G-0VHND6XRJV"
       />
-      <Script strategy="afterInteractive">
+      <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

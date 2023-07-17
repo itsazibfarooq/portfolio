@@ -18,7 +18,7 @@ function Main() {
               Breathes code
             </p>
             <h1 className="py-4 text-gray-700">
-              Hi, I'm{" "}
+              Hi, I&apos;m{" "}
               <span className="text-[#d18800]">Azib{hover ? "🤝" : " "}</span>
             </h1>
             <h1 className="py-2 text-gray-700">A Full Stack Developer</h1>
