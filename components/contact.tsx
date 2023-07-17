@@ -49,6 +49,9 @@ function Contact() {
       }, 3000);
     } catch (err) {
       setStatus("Try Again");
+      setTimeout(() => {
+        setStatus("send message");
+      }, 3000);
       console.log(err);
     }
   };
