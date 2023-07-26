@@ -19,11 +19,9 @@ function Navbar() {
 
   useEffect(() => {
     if (projectList.includes(path)) {
-      console.log("in the if clause");
       setNavBg("transparent");
       setLinkColor("#f8f8f8");
     } else {
-      console.log("in the else clause");
       setNavBg("#ecf0f3"); // bg: #ecf0f3
       setLinkColor("#1f2937");
     }

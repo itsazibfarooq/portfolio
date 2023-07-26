@@ -17,7 +17,7 @@ function ProjectItem(item: any) {
         <p className="pb-4 pt-2 text-white text-center">{...item.tools}</p>
         <Link href={item.url}>
           <p className="text-center py-3 roundede-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
-            More Info
+            Details{" >"}
           </p>
         </Link>
       </div>

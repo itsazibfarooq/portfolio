@@ -1,2 +1,2 @@
-const projectList = ["/property"];
+const projectList = ["/projects/property", "/projects/superchat"];
 export default projectList;

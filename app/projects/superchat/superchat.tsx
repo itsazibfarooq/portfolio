@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
-import propertyImg from "../../public/assets/projects/property.jpg";
+import superchat from "../../../public/assets/projects/superchat.png";
 import Link from "next/link";
 
-export default function Property() {
+export default function Superchat() {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -13,12 +13,12 @@ export default function Property() {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={propertyImg}
+          src={superchat}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10">
-          <h2 className="py-2">Property Finder</h2>
-          <h3>React js | Tailwind | Firebase</h3>
+          <h2 className="py-2">Super Chat</h2>
+          <h3>JavaScript | Socket.io</h3>
         </div>
       </div>
 
@@ -32,12 +32,19 @@ export default function Property() {
             id excepturi pariatur itaque laudantium, numquam, reprehenderit
             molestiae dolore neque assumenda soluta hic.
           </p>
-          <button className="bg-gradient-to-r from-[#5651e5] to-[#709dff] px-8 py-2 mt-4 mr-8">
-            Demo
-          </button>
-          <button className="bg-gradient-to-r from-[#5651e5] to-[#709dff] px-8 py-2 mt-4">
-            Code
-          </button>
+          <a href={"https://solitary-leaf-5079.fly.dev/"}>
+            <button className="bg-gradient-to-r from-[#5651e5] to-[#709dff] px-8 py-2 mt-4 mr-8">
+              Demo
+            </button>
+          </a>
+          <Link
+            href={"https://github.com/itsazibfarooq/SuperChat"}
+            target="_blank"
+          >
+            <button className="bg-gradient-to-r from-[#5651e5] to-[#709dff] px-8 py-2 mt-4">
+              Code
+            </button>
+          </Link>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
@@ -45,15 +52,15 @@ export default function Property() {
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                React
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" />
-                Tailwind
+                Socket.io
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
                 JavaScript
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" />
+                NodeJS
               </p>
             </div>
           </div>

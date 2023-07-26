@@ -2,7 +2,7 @@ import React from "react";
 import ProjectItem from "./projectItem";
 
 import propertyImg from "../public/assets/projects/property.jpg";
-import crypto from "../public/assets/projects/crypto.jpg";
+import superchat from "../public/assets/projects/superchat.png";
 import netflix from "../public/assets/projects/netflix.jpg";
 
 function Projects() {
@@ -15,16 +15,16 @@ function Projects() {
         <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            image={propertyImg}
-            title="Propert Finder"
-            tools={["ReactJS", "JS"]}
-            url="/property"
+            image={superchat}
+            title="Super Chat"
+            tools={["Socket.io"]}
+            url="/projects/superchat"
           />
           <ProjectItem
-            image={crypto}
-            title="Crypto Trading"
-            tools={["Bitcoin", "TS"]}
-            url="/crypto"
+            image={propertyImg}
+            title="Property Finder"
+            tools={["ReactJS"]}
+            url="/projects/property"
           />
           <ProjectItem
             image={netflix}
