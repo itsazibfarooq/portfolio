@@ -20,18 +20,6 @@ function Projects() {
             tools={["Socket.io"]}
             url="/projects/superchat"
           />
-          <ProjectItem
-            image={propertyImg}
-            title="Property Finder"
-            tools={["ReactJS"]}
-            url="/projects/property"
-          />
-          <ProjectItem
-            image={netflix}
-            title="NetFlix Clone"
-            tools={["TDBM", "TS"]}
-            url="/netflix"
-          />
         </div>
       </div>
     </div>

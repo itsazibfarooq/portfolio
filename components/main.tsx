@@ -21,7 +21,7 @@ function Main() {
               Hi, I&apos;m{" "}
               <span className="text-[#d18800]">Azib{hover ? "🤝" : " "}</span>
             </h1>
-            <h1 className="py-2 text-gray-700">A Full Stack Developer</h1>
+            <h1 className="py-2 text-gray-700">A Software Engineer</h1>
           </div>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
             {

@@ -27,10 +27,11 @@ export default function Superchat() {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
-            obcaecati beatae reiciendis alias, recusandae doloremque dicta omnis
-            id excepturi pariatur itaque laudantium, numquam, reprehenderit
-            molestiae dolore neque assumenda soluta hic.
+            SuperChat is a demo test application, implementation the concept of
+            websocket for server client connection. The current application is
+            one to one so to better test this application you can open the same
+            app in two tabs and send message to each other or you can invite
+            friends overs to have group chat or have super chat.
           </p>
           <a href={"https://solitary-leaf-5079.fly.dev/"}>
             <button className="bg-gradient-to-r from-[#5651e5] to-[#709dff] px-8 py-2 mt-4 mr-8">
