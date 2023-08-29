@@ -27,7 +27,7 @@ export default function Superchat() {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            SuperChat is a demo test application, implementation the concept of
+            SuperChat is a demo test application, implementating the concept of
             websocket for server client connection. The current application is
             one to one so to better test this application you can open the same
             app in two tabs and send message to each other or you can invite
