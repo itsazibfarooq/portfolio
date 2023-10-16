@@ -19,20 +19,55 @@ const About = () => {
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">
             About
           </p>
-          <h2 className="py-4">Who I Am</h2>
+          <h2 className="py-4">Hi, I'm Azib 🤝</h2>
           <p className="py-2 text-[#808080] font-mono">\\ Hello world 👋</p>
           <p className="py-2 text-gray-600">
-            Meet Azib, a self-taught programming enthusiast with an unquenchable
-            thirst for solving intricate problems. My love for coding knows no
-            bounds, and I am always eager to take on big and complex challenges.
-            I am a rapid learner and a natural leader, I excels at guiding
-            others through the digital realm.
-          </p>
-          <p className="py-2 text-gray-600">
-            My ultimate dream is to work in renowned tech software firms like
-            MAANG, where I can passionately contribute and leave a lasting
-            impact on the world of technology.
-          </p>
+            If I have to describe myself in a single word, it would be "self-starter🏃". 
+            I am a curious soul who is always seeking problems to crunch and put in the best 
+            efforts💪 to solve them. I am enthusiastic about my objectives and can squeeze myself 
+            into fixing issues with whom I am married👨‍💻. I always incorporate resources into my 
+            arsenal🏹 to accomplish my job.
+            </p>
+
+            <p className="py-2 text-gray-600">
+            I have around an year of experience as a software engineer @Algolab. During my 
+            professional experience, I've cultivated a unique approach to my work that 
+            emphasizes a willingness to take calculated risks. This mindset has allowed 
+            me to push boundaries and uncover innovative solutions to complex problems. I 
+            thrive under high-pressure situations, consistently delivering exceptional results 
+            even when faced with tight deadlines and demanding environments. 
+            </p>
+            
+            <p className="py-2 text-gray-600">
+            Additionally, my tinkering nature has proven invaluable in exploring new 
+            technologies and methodologies, enabling me to adapt swiftly to emerging 
+            trends in the fast-paced tech landscape. I am an avid participant in 
+            international hackathons and coding competitions, where I relish the 
+            opportunity to collaborate with like-minded individuals, exchange ideas, 
+            and tackle challenging projects. This involvement has not only sharpened 
+            my technical skills but also expanded my horizons by exposing me to diverse 
+            perspectives and cutting-edge techniques. It's this proactive and adventurous 
+            spirit that fuels my continuous growth and fuels my passion for creating meaningful, 
+            impactful software solutions.💡🔧🌐👨‍💻
+            </p>
+          
+            <p className="py-2 text-gray-600">
+            🛠️ My Tech Stack Includes (but not limited to):
+            Languages: C++, Python, JavaScript
+            Layout and Styling: HTML5, CSS
+            Frontend: Next.js, Angular, React
+            Backend: Node.js, Express.js, Flask, API Development
+            APIs: HuggingFace, Judge0, RapidAPI
+            Databases: SQL, MongoDB, Firebase, Airtable
+            Tools: Git, Docker, Kubernetes
+            Data Science: Pandas, NumPy, Matplotlib, Scikit-Learn
+            ML/AI: TensorFlow, Keras, PyTorch
+            </p>
+
+            <p className="py-2 text-gray-600">
+            I am open to work on collaborative projects within software engineering or intern/full time positions.
+            🔗 Let's Connect
+            </p>
         </div>
         <div
           onMouseEnter={hoverEnter}
