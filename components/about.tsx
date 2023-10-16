@@ -22,7 +22,7 @@ const About = () => {
           <h2 className="py-4">Hi, I&apos;m Azib 🤝</h2>
           <p className="py-2 text-[#808080] font-mono">\\ Hello world 👋</p>
         <p className="py-2 text-gray-600">
-        If I have to describe myself in a single word, it would be &quot;self-starter🏃&quot;.
+        If I have to describe myself in a single word, it would be <strong>&quot;self-starter🏃&quot;</strong>.
         I am a curious soul who is always seeking problems to crunch and put in the best
         efforts💪 to solve them. I am enthusiastic about my objectives and can squeeze myself
         into fixing issues with whom I am married👨‍💻. I always incorporate resources into my
@@ -30,7 +30,7 @@ const About = () => {
       </p>
 
       <p className="py-2 text-gray-600">
-        I have around an year of experience as a software engineer @Algolab. During my
+        I have around an year of experience as a software engineer <strong>@Algolab</strong>. During my
         professional experience, I&apos;ve cultivated a unique approach to my work that
         emphasizes a willingness to take calculated risks. This mindset has allowed
         me to push boundaries and uncover innovative solutions to complex problems. I
@@ -52,8 +52,8 @@ const About = () => {
       </p>
 
       <p className="py-2 text-gray-600">
-        I am open to work on collaborative projects within software engineering or intern/full time positions.
-        🔗 Let&apos;s Connect
+        I am open to work on collaborative projects within software engineering or intern/full time positions.</br>
+        <strong>🔗 Let&apos;s Connect</strong>
       </p>
         </div>
         <div
