@@ -52,28 +52,6 @@ const About = () => {
       </p>
 
       <p className="py-2 text-gray-600">
-        🛠️ My Tech Stack Includes (but not limited to):
-        <br />
-        Languages: C++, Python, JavaScript
-        <br />
-        Layout and Styling: HTML5, CSS
-        <br />
-        Frontend: Next.js, Angular, React
-        <br />
-        Backend: Node.js, Express.js, Flask, API Development
-        <br />
-        APIs: HuggingFace, Judge0, RapidAPI
-        <br />
-        Databases: SQL, MongoDB, Firebase, Airtable
-        <br />
-        Tools: Git, Docker, Kubernetes
-        <br />
-        Data Science: Pandas, NumPy, Matplotlib, Scikit-Learn
-        <br />
-        ML/AI: TensorFlow, Keras, PyTorch
-      </p>
-
-      <p className="py-2 text-gray-600">
         I am open to work on collaborative projects within software engineering or intern/full time positions.
         🔗 Let&apos;s Connect
       </p>
