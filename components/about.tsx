@@ -52,7 +52,7 @@ const About = () => {
       </p>
 
       <p className="py-2 text-gray-600">
-        I am open to work on collaborative projects within software engineering or intern/full time positions.</br>
+        I am open to work on collaborative projects within software engineering or intern/full time positions.<br />
         <strong>🔗 Let&apos;s Connect</strong>
       </p>
         </div>
