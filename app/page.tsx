@@ -3,6 +3,8 @@ import Main from "../components/main";
 import About from "@/components/about";
 import Skills from "@/components/skills";
 import Projects from "@/components/projects";
+import Experience from "@/components/Experience";
+import Research from "@/components/research";
 import Contact from "@/components/contact";
 import Script from "next/script";
 
@@ -12,8 +14,10 @@ export default function Home() {
       <Navbar />
       <Main />
       <About />
-      <Skills />
+      <Research />
+      <Experience />
       <Projects />
+      <Skills />
       <Contact />
       {/* <!-- Google tag (gtag.js) --> */}
       <Script

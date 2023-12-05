@@ -84,21 +84,43 @@ function Contact() {
               <div>
                 <p className="uppercase pt-8">Let&apos;s Talk</p>
                 <div className="flex items-center justify-between py-4">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaLinkedinIn />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaGithub />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaInstagram />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaTwitter />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/itsazibfarooq/"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaLinkedinIn />
+                    </div>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.github.com/itsazibfarooq/"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaGithub />
+                    </div>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/Itsazibfarooq"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaInstagram />
+                    </div>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.twitter.com/Itsazibfarooq"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaTwitter />
+                    </div>
+                  </a>
+                  <a href="mailto:azibfarooq10@gmail.com">
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <AiOutlineMail />
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
