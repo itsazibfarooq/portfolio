@@ -30,7 +30,7 @@ const Research = () => {
             <strong>Advisor</strong>
             <span className="text-red-500"> Prof. Xianglong Feng</span>
           </p>
-          <a target="_blank" href={"https://tinyurl.com/yc5t3ekn"}>
+          <a target="_blank" href={"https://drive.google.com/file/d/1-d67lyA9-GfTaMLsbWqOfFseTl6TzkyN/view?usp=sharing"}>
             <button className="bg-gradient-to-r from-[#5651e5] to-[#709dff] px-8 py-2 mt-4 mr-8">
               Resume
             </button>
