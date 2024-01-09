@@ -16,12 +16,10 @@ const Research = () => {
           <p className="py-2 text-gray-600">
             Hello, I am currently pursuing my Masters in Computer Science at
             Miami University, where my academic journey is deeply rooted in the
-            ever-evolving field of technology. My focus lies in the dynamic
-            realm of machine learning, and my current research endeavors revolve
-            around enhancing the security infrastructure of neural networks.
-            Specifically, I am dedicated to fortifying the architecture and data
-            of neural networks, ensuring their robustness and reliability for
-            secure integration into offload cloud applications. This pursuit is
+            the ever-evolving field of Machine Learning and AI. My current research 
+            endeavors revolve around multi-modal models and their security against adversarial
+            attacks. Specifically, I am dedicated to fortifying the architecture and preventing jailbreak
+            of large language models enabling strong resistance against adversarial examples. This pursuit is
             driven by my passion for contributing to the advancements in
             artificial intelligence and its responsible utilization in diverse
             technological landscapes.
