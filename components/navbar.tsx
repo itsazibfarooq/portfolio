@@ -17,27 +17,35 @@ function Navbar() {
   const [linkColor, setLinkColor] = useState("#1f2937");
   const path = usePathname();
 
+  const handleBgColor = (bgColor: string, fontColor: string) => {
+    setNavBg(bgColor);
+    setLinkColor(fontColor);
+  };
+
+  const handleShadow = () => {
+    if (window.scrollY == 0) {
+      setShadow(false); // defanging shadow
+      handleBgColor("transparent", "#f8f8f8");
+    } else {
+      setShadow(true);
+      handleBgColor("#ecf0f3", "#1f2937");
+    }
+  };
+
   useEffect(() => {
     if (projectList.includes(path)) {
-      setNavBg("transparent");
-      setLinkColor("#f8f8f8");
+      if (window.scrollY == 0) {
+        handleBgColor("transparent", "#f8f8f8");
+      }
+      window.addEventListener("scroll", handleShadow);
     } else {
-      setNavBg("#ecf0f3"); // bg: #ecf0f3
-      setLinkColor("#1f2937");
+      handleBgColor("#ecf0f3", "#1f2937");
     }
   }, [path]);
 
-  useEffect(() => {
-    const handleShadow = () => {
-      if (window.scrollY >= 90) {
-        setShadow(false); // defanging shadow
-      } else {
-        setShadow(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleShadow);
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleShadow);
+  // }, []);
 
   const handleNav = () => {
     setNav(!nav);

@@ -4,7 +4,10 @@ import React from "react";
 
 function ExpItem(item: any) {
   return (
-    <div className="relative flex items-center justify-center h-auto shaodw-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#2E8B57] to-[#20B2AA]">
+    <div
+      className="relative flex items-center justify-center 
+    h-auto shaodw-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#2E8B57] to-[#20B2AA]"
+    >
       <Image
         className="rounded-xl group-hover:opacity-10"
         src={item.image}

@@ -7,6 +7,7 @@ import Experience from "@/components/Experience";
 import Research from "@/components/research";
 import Contact from "@/components/contact";
 import Script from "next/script";
+import Webinars from "@/components/webinars";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Main />
       <About />
       <Research />
+      <Webinars />
       <Experience />
       <Projects />
       <Skills />
