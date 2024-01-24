@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
-import { SiJupyter, SiPytorch } from "react-icons/si";
+import { SiPytorch } from "react-icons/si";
 import { IoIosRecording } from "react-icons/io";
 import { FaPython } from "react-icons/fa";
 
