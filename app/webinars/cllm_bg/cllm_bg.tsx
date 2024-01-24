@@ -4,11 +4,11 @@ import { RiRadioButtonFill } from "react-icons/ri";
 import { IoIosRecording } from "react-icons/io";
 import { FiGithub } from "react-icons/fi";
 
-import swph from "../../../public/assets/webinars/aws_swph.jpeg";
+import cllm_bg from "../../../public/assets/webinars/cllm_bg.jpeg";
 import cover from "../../../public/assets/cover.webp";
 import Link from "next/link";
 
-export default function Swph() {
+export default function Cllm_bg() {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -21,9 +21,7 @@ export default function Swph() {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10">
-          <h2 className="py-2">
-            Deploying Static Webapp to AWS, automation using terraform
-          </h2>
+          <h2 className="py-2">Character Level Laguage Modelling via Bigram</h2>
           <div className="flex">
             <FiGithub className="mr-1" /> <IoIosRecording />
           </div>
@@ -45,7 +43,7 @@ export default function Swph() {
               className="z-1"
               height={400}
               width={400}
-              src={swph}
+              src={cllm_bg}
               alt="/"
             />
           </div>
@@ -88,7 +86,12 @@ export default function Swph() {
               CODE
             </a>
 
-            <a href={"https://fb.watch/pA09SpRDhj/"} target="_blank">
+            <a
+              href={
+                "https://web.facebook.com/iCodeguru/videos/1602647703820200"
+              }
+              target="_blank"
+            >
               <IoIosRecording className="hover:text-blue-900" size={70} />
               RECORDING
             </a>

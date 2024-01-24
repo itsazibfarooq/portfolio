@@ -4,11 +4,12 @@ import { RiRadioButtonFill } from "react-icons/ri";
 import { IoIosRecording } from "react-icons/io";
 import { FiGithub } from "react-icons/fi";
 
-import swph from "../../../public/assets/webinars/aws_swph.jpeg";
+import dp_gcp from "../../../public/assets/webinars/dp_gcp.jpeg";
+import data_pipeline from "../../../public/assets/webinars/data_pipeline.jpeg";
 import cover from "../../../public/assets/cover.webp";
 import Link from "next/link";
 
-export default function Swph() {
+export default function Dp_gcp() {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -21,11 +22,9 @@ export default function Swph() {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10">
-          <h2 className="py-2">
-            Deploying Static Webapp to AWS, automation using terraform
-          </h2>
+          <h2 className="py-2">Datapipelines in Google Cloud Platform</h2>
           <div className="flex">
-            <FiGithub className="mr-1" /> <IoIosRecording />
+            <IoIosRecording />
           </div>
         </div>
       </div>
@@ -33,11 +32,11 @@ export default function Swph() {
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4 relative text-justify">
           <p className="mb-10">
-            In this webinar, I guide audience through the process of deploying
-            static web applications using three powerful methods. I was the
-            host, and we explored the seamless deployment of static web apps
-            with AWS Amplify, AWS S3 for static web app hosting, and delved into
-            the automation with Terraform.
+            In this webinar, I have developed a simple datapipeline in GCP,
+            using different services, including cloud storage, BigQuery, and
+            Dataflow. I have delivered the webinar to the audience of more than
+            100 participants. I successfully implemented an automated pipeline,
+            using cloud function.
           </p>
 
           <div className="flex justify-center mb-5">
@@ -45,50 +44,48 @@ export default function Swph() {
               className="z-1"
               height={400}
               width={400}
-              src={swph}
+              src={dp_gcp}
               alt="/"
             />
           </div>
 
-          <h2 className="mb-5">Key Highlights:</h2>
+          <h2 className="mb-5">PIPELINE:</h2>
+          <div className="flex justify-center mb-5">
+            <Image className="z-1" src={data_pipeline} alt="/" />
+          </div>
 
           <ol className="mb-10">
             <li className="mb-5">
-              <strong>AWS Amplify Unleashed:</strong> I kicked off the webinar
-              by harnessing the full potential of AWS Amplify. Together, we
-              explored how this service simplifies the deployment process,
-              providing an intuitive and efficient way to get your static web
-              apps up and running in no time.
+              <strong>Cloud Composer :</strong>Composer sequentially run the
+              python script, which make the api call and save the response csv
+              file format in cloud storage after parsing the response.
             </li>
 
             <li className="mb-5">
-              <strong>AWS S3 for Static Web App Hosting:</strong> Dive deep into
-              the core of AWS S3 as we discovered the robust hosting
-              capabilities it offers for static web applications. I demonstrated
-              the step-by-step process, highlighting best practices to ensure a
-              smooth deployment experience.
+              <strong>Cloud Function :</strong> Declared a function which run a
+              dataflow job, responsible for ETL from storage source to dataware
+              house sink (BigQuery). Trigger is enabled on the bucket create
+              object event.
             </li>
 
             <li className="mb-5">
-              <strong>Automate with Terraform:</strong> Automation is key, and
-              with Terraform, we took our deployment process to the next level.
-              Uncover the magic of infrastructure as code (IaC) as we explored
-              how Terraform simplifies and streamlines the setup of S3 for web
-              app hosting.
+              <strong>DataFlow :</strong> Dataflow upload the csv created file
+              from cloud storage to the BigQuery, which in turn is connected to
+              the Looker dashboard to update dashboard based on the
+              datawarehouse.
             </li>
           </ol>
 
+          <p>
+            Learn more about the implementation, in the following video
+            recording.
+          </p>
+
           <div className="flex">
             <a
-              className="mr-10"
-              href={"https://github.com/itsazibfarooq/aws"}
+              href={"https://fb.watch/pIS8mLHw59/?mibextid=Nif5oz"}
               target="_blank"
             >
-              <FiGithub className="hover:text-red-500" size={70} />
-              CODE
-            </a>
-
-            <a href={"https://fb.watch/pA09SpRDhj/"} target="_blank">
               <IoIosRecording className="hover:text-blue-900" size={70} />
               RECORDING
             </a>
@@ -101,19 +98,31 @@ export default function Swph() {
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                AWS Amplify
+                Cloud Storage
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                AWS S3
+                Cloud Composer
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                AWS IAM
+                IAM
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Terrafrom
+                BigQuery
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" />
+                Cloud Functions
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" />
+                DataFlow
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" />
+                Python
               </p>
             </div>
           </div>

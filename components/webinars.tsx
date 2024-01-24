@@ -3,6 +3,8 @@ import WebinarItem from "./webinarItem";
 
 import nnfs from "../public/assets/webinars/nnfs.jpeg";
 import swph from "../public/assets/webinars/aws_swph.jpeg";
+import cllm_bg from "../public/assets/webinars/cllm_bg.jpeg";
+import dp_gcp from "../public/assets/webinars/dp_gcp.jpeg";
 
 function Webinars() {
   return (
@@ -24,6 +26,18 @@ function Webinars() {
             title="AWS Static Webapp Deployment"
             tools={["AWS, Terraform"]}
             url="/webinars/swph"
+          />
+          <WebinarItem
+            image={cllm_bg}
+            title="Character Level Language Modelling"
+            tools={["Python, PyTorch"]}
+            url="/webinars/cllm_bg"
+          />
+          <WebinarItem
+            image={dp_gcp}
+            title="Data Pipelines In Google Cloud Platform"
+            tools={["Dataflow, Looker, BigQuery, Storage, Composer"]}
+            url="/webinars/dp_gcp"
           />
         </div>
       </div>
